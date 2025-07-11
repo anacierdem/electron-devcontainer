@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ubuntu:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities:
+                - gpu
+    image: ubuntu
+    command: nvidia-smi
