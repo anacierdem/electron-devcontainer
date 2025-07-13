@@ -13,3 +13,7 @@ GPU acceleration doesn't work as of now.
 Integration seem to work, simply run `docker compose up` to see what I mean. Also see `inxi -G` in the devcontainer.
 
 To test barebones X integration, run xeyes in the devcontainer.
+
+## TODO
+
+- [ ] Run as a non-root user instead
