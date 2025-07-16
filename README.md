@@ -16,4 +16,5 @@ To test barebones X integration, run xeyes in the devcontainer.
 
 ## TODO
 
-- [ ] Run as a non-root user instead
+- [x] Run as a non-root user instead
+- [x] vscode seem to be auto connect X11, get rid of unnecessary configs. OTOH, it doesn't boot properly

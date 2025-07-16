@@ -7,5 +7,3 @@ RUN apt-get update && apt-get install \
     x11-apps inxi \
     -yq --no-install-suggests --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
-
-USER root
