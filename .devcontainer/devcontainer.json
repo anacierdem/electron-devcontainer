@@ -1,11 +1,6 @@
 {
-	"name": "Node.js",
+	"name": "Electron",
 	"build": { "dockerfile": "Dockerfile" },
-	"mounts": [
-	],
-	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-	"workspaceFolder": "/workspace",
-	// This doesn't work for some reason?
 	"postAttachCommand": "npm i",
-	"remoteUser": "node"
+	"containerUser": "node"
 }
