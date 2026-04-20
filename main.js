@@ -1,10 +1,6 @@
-const electron = require('electron')
+const { app, BrowserWindow } = require('electron')
 
-electron.app.on("ready", () => {
-	let browserWindow = new electron.BrowserWindow({
-		show: true,
-		x: 500,
-	});
-
-	browserWindow.webContents.loadURL("https://webglsamples.org/blob/blob.html");
-});
+app.on('ready', async () => {
+	const win = new BrowserWindow({ show: true })
+	win.webContents.loadURL('https://webglsamples.org/blob/blob.html')
+})
